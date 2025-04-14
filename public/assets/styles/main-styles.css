@@ -1,0 +1,94 @@
+@font-face {
+  font-family: "Jura";
+  src: url("../fonts/Jura.ttf");
+}
+
+body {
+  font-family: "Jura", sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-bottom: 160px;
+  align-items: center;
+  position: relative;
+}
+
+h1 {
+  width: 100%;
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.main-form {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  height: 400px;
+  justify-content: space-evenly;
+}
+
+.action_add_car,
+.action_car_list,
+.action_user_list {
+  background-image: linear-gradient(to left, #54ab5a, #60bd65);
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  height: 60px;
+  margin: 0;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  transition: background-image 0.3s, transform 0.2s;
+}
+
+.action_add_car:hover,
+.action_car_list:hover,
+.action_user_list:hover {
+  background-image: linear-gradient(to left, #5ca75f, #4a8e4f);
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+p {
+  color: white;
+  height: auto;
+  margin: 0;
+  font-size: 18px;
+}
+
+.footer-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: space-between;
+  padding: 2.5%;
+  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.footer-container a {
+  color: black;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.footer-container a:hover {
+  color: black;
+  cursor: pointer;
+}

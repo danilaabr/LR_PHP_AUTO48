@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Список продавцов</title>
+    <link href="/assets/styles/client-list-styles.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Продавцы автомобилей</h1>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>ФИО</th>
+            <th>Телефон</th>
+            <th>Email</th>
+        </tr>
+        {% for client in clients %}
+        <tr>
+            <td>{{ client.client_id }}</td>
+            <td>{{ client.fullname }}</td>
+            <td>{{ client.phone }}</td>
+            <td>{{ client.email }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <div class="footer-container">
+        <a href="/">Главная</a>
+        <a href="">Профиль</a>
+    </div>
+</body>
+</html>

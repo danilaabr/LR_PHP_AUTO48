@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Список автомобилей</title>
+    <link href="/assets/styles/car-list-styles.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Выставленные на продажу автомобили</h1>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Марка</th>
+            <th>Модель</th>
+            <th>Год</th>
+            <th>Цена</th>
+            <th>Цвет</th>
+        </tr>
+        {% for car in cars %}
+        <tr>
+            <td>{{ car.car_id }}</td>
+            <td>{{ car.car_brand }}</td>
+            <td>{{ car.car_model }}</td>
+            <td>{{ car.release_date }}</td>
+            <td>{{ car.car_price }} ₽</td>
+            <td>{{ car.car_color }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <div class="footer-container">
+        <a href="/">Главная</a>
+        <a href="">Профиль</a>
+    </div>
+</body>
+</html>
